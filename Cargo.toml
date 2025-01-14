@@ -1,0 +1,21 @@
+[package]
+name = "subxt-examples"
+version = "0.1.0"
+authors = ["Horizen Labs <admin@horizenlabs.io>"]
+edition = "2021"
+repository = "https://github.com/zkVerify/zkverify-subxt-examples"
+homepage = "https://zkverify.io"
+license = "Apache-2.0"
+description = "Examples for interacting with zkVerify via subxt"
+publish = false
+
+[dependencies]
+tokio = { version = "1.22.0", features = ["full"] }
+subxt = "0.38.0"
+subxt-signer = "0.38.0"
+serde_json = "1.0.135"
+hex = "0.4.3"
+
+[[example]]
+name = "submit_proof_basic"
+path = "examples/submit_proof_basic.rs"
